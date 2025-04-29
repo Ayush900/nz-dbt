@@ -19,7 +19,11 @@ import nzpy
 
 logger = AdapterLogger("Netezza")
 
-test
+import subprocess
+
+def unsafe_function(user_input):
+    subprocess.run(user_input, shell=True)  # CodeQL should flag this
+
 @dataclass
 class NetezzaCredentials(Credentials):
     """
