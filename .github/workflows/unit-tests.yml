@@ -2,9 +2,7 @@ name: Unit Tests
 
 on:
   push:
-    branches:
-      - "main"
-      - "*.latest"
+
   workflow_dispatch:
 
 permissions: read-all
@@ -41,5 +39,5 @@ jobs:
 
       - name: Run unit tests with pytest
         run: |
-          pytest tests/unit  # Adjust this if your tests are in a different folder
+          pytest -xv tests/unit  # Adjust this if your tests are in a different folder
         shell: bash
