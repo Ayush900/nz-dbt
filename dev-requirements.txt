@@ -2,7 +2,7 @@ dbt-adapters==1.13.2
 dbt-common==1.14.0
 dbt-core==1.9.2
 dbt-extractor==0.5.1
-dbt-semantic-interfaces==0.7.4
+dbt-semantic-interfaces==0.8.3
 dbt-tests-adapter==1.10.4
 
 black~=23.10
