@@ -19,7 +19,7 @@ import nzpy
 
 logger = AdapterLogger("Netezza")
 
-
+print("test")
 @dataclass
 class NetezzaCredentials(Credentials):
     """
